@@ -3,7 +3,9 @@ package com.goldenlibrary.mgtsystem.models;
 import java.util.Date;
 
 import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
+@Document(collection = "members")
 public class Member {
     @Id
     String id;
@@ -18,12 +20,13 @@ public class Member {
 
     }
 
-    public Member(String fname, String lname, Date dob, String address, String email) {
+    public Member(String fname, String lname, Date dob, String address, String email, Date memberSince) {
         this.fname = fname;
         this.lname = lname;
         this.dob = dob;
         this.address = address;
         this.email = email;
+        this.memberSince = memberSince;
     }
 
     public String getId() {
