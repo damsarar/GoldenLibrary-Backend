@@ -14,19 +14,20 @@ public class Member {
     Date dob;
     String address;
     String email;
-    Date memberSince;
+    Date memberSince = new Date();
 
     public Member() {
 
     }
 
-    public Member(String fname, String lname, Date dob, String address, String email, Date memberSince) {
+    public Member(String fname, String lname, Date dob, String address, String email) {
+
         this.fname = fname;
         this.lname = lname;
         this.dob = dob;
         this.address = address;
         this.email = email;
-        this.memberSince = memberSince;
+
     }
 
     public String getId() {
