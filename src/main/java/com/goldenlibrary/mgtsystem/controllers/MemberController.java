@@ -52,6 +52,10 @@ public class MemberController {
             m.setAddress(member.getAddress());
         }
 
+        if (member.getContactNo() != null) {
+            m.setContactNo(member.getContactNo());
+        }
+
         if (member.getDob() != null) {
             m.setDob(member.getDob());
         }
