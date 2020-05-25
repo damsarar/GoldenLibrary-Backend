@@ -13,6 +13,7 @@ public class Member {
     String lname;
     Date dob;
     String address;
+    String contactNo;
     String email;
     Date memberSince = new Date();
 
@@ -20,12 +21,13 @@ public class Member {
 
     }
 
-    public Member(String fname, String lname, Date dob, String address, String email) {
+    public Member(String fname, String lname, Date dob, String address, String contactNo, String email) {
 
         this.fname = fname;
         this.lname = lname;
         this.dob = dob;
         this.address = address;
+        this.contactNo = contactNo;
         this.email = email;
 
     }
@@ -84,6 +86,14 @@ public class Member {
 
     public void setMemberSince(Date memberSince) {
         this.memberSince = memberSince;
+    }
+
+    public String getContactNo() {
+        return contactNo;
+    }
+
+    public void setContactNo(String contactNo) {
+        this.contactNo = contactNo;
     }
 
 }
